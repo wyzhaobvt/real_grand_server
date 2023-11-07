@@ -10,7 +10,7 @@ dotenv.config()
 //require cors
 //set cors policy to allow requests from localhost:3000
 let corspolicy = {
-    origin:'http://localhost:3000'
+    origin:process.env.FRONTEND_URL
 }
 app.use(cors(corspolicy))
 app.use(express.json());
